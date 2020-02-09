@@ -1,3 +1,5 @@
+require "httparty"
+require_relative "services/api"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
