@@ -1,5 +1,6 @@
 require "httparty"
 require_relative "services/api"
+require_relative "libs/mongo"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

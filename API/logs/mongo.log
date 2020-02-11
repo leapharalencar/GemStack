@@ -1,0 +1,252 @@
+# Logfile created on 2020-02-10 23:15:40 -0300 by logger.rb/66358
+D, [2020-02-10T23:15:41.631840 #14964] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:15:41.632268 #14964] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:15:41.633010 #14964] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:15:41.633262 #14964] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:15:41.633675 #14964] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:15:41.633979 #14964] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:15:41.636790 #14964] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:15:42.177822 #14964]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:15:42.178323 #14964] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:15:42.178640 #14964] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:15:42.178961 #14964] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:15:42.179277 #14964] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:15:42.180109 #14964] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:15:42.180629 #14964] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:15:42.638131 #14964] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:15:42.744809 #14964] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x50979240 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x51424700 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x0000000006204878 @seconds=1581387340, @increment=1>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:15:40 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x000000000620ef58 @seconds=1581387340, @increment=1>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:15:40 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:15:42 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x000000000620c9d8 @seconds=1581387340, @increment=1>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x000000000620c668 @seconds=1581387340, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x51428620 type=generic data=0x4e088a936ede026e...>, "keyId"=>6761895265558331393}}} average_round_trip_time=0.5631107>>
+D, [2020-02-10T23:15:42.745232 #14964] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:15:42.746215 #14964] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:15:42.746666 #14964] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:15:43.159692 #14964] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:15:43.298232 #14964] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.138s
+D, [2020-02-10T23:15:43.305781 #14964] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:15:43.443947 #14964] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.138s
+D, [2020-02-10T23:15:43.444345 #14964] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:15:43.592035 #14964] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.147s
+D, [2020-02-10T23:15:43.592770 #14964] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google"}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000063b4128 @seconds=1581387340, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x52297420 type=ge...
+D, [2020-02-10T23:15:43.730995 #14964] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.138s
+D, [2020-02-10T23:15:45.149248 #14964] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:15:45.289263 #14964] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.140s
+D, [2020-02-10T23:15:45.294911 #14964] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:15:45.434002 #14964] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.139s
+D, [2020-02-10T23:15:45.434411 #14964] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:15:45.574934 #14964] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.140s
+D, [2020-02-10T23:15:45.578570 #14964] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x51803500 type=uuid data=0xc274b8e3a8904f3b...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000063b4128 @seconds=1581387340, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x52297420 type=gene...
+D, [2020-02-10T23:15:45.721282 #14964] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.140s
+D, [2020-02-10T23:20:33.241991 #17828] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:20:33.242816 #17828] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:20:33.244410 #17828] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:20:33.244871 #17828] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:20:33.245786 #17828] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:20:33.246464 #17828] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:20:33.247305 #17828] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:20:33.800550 #17828]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:20:33.801389 #17828] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:20:33.801860 #17828] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:20:33.802422 #17828] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:20:33.802913 #17828] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:20:33.804071 #17828] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:20:33.804900 #17828] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:20:34.248425 #17828] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:20:34.386414 #17828] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x49639880 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x50481400 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x0000000006049c18 @seconds=1581387630, @increment=1>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:20:30 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x00000000060499c0 @seconds=1581387630, @increment=1>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:20:30 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:20:34 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x0000000006049588 @seconds=1581387630, @increment=1>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x0000000006049498 @seconds=1581387630, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x50481600 type=generic data=0x07c7e7b50b793c48...>, "keyId"=>6761895265558331393}}} average_round_trip_time=0.5805101>>
+D, [2020-02-10T23:20:34.386986 #17828] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:20:34.388106 #17828] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:20:34.388737 #17828] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:20:34.820794 #17828] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:20:34.960359 #17828] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.139s
+D, [2020-02-10T23:20:34.976550 #17828] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:20:35.138489 #17828] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.161s
+D, [2020-02-10T23:20:35.139821 #17828] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:20:35.280029 #17828] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.140s
+D, [2020-02-10T23:20:35.282397 #17828] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google", "user"=>"5e403f2151edd6001784e87b"}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000060d3a58 @seconds=1581387630, @increment=1>, "signature"=>{"has...
+D, [2020-02-10T23:20:35.423257 #17828] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.140s
+D, [2020-02-10T23:20:36.483343 #17828] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:20:36.621879 #17828] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.138s
+D, [2020-02-10T23:20:36.640457 #17828] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:20:36.779353 #17828] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.138s
+D, [2020-02-10T23:20:36.780565 #17828] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:20:36.919734 #17828] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.138s
+D, [2020-02-10T23:20:36.921042 #17828] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x50731700 type=uuid data=0x6934183da08147ca...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000063551c8 @seconds=1581387635, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x52077260 type=gene...
+D, [2020-02-10T23:20:37.060303 #17828] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.138s
+D, [2020-02-10T23:21:48.393065 #15312] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:21:48.393484 #15312] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:21:48.394009 #15312] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:21:48.394314 #15312] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:21:48.394662 #15312] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:21:48.394836 #15312] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:21:48.395325 #15312] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:21:49.059053 #15312]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:21:49.059755 #15312] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:21:49.060116 #15312] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:21:49.060548 #15312] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:21:49.060951 #15312] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:21:49.061957 #15312] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:21:49.062656 #15312] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:21:49.395787 #15312] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:21:49.736137 #15312] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x51580440 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x51989460 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x00000000062f9288 @seconds=1581387700, @increment=1>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:21:40 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x00000000062f85e0 @seconds=1581387700, @increment=1>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:21:40 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:21:49 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x000000000632bb20 @seconds=1581387700, @increment=1>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x000000000632abd0 @seconds=1581387700, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x51991080 type=generic data=0xa2e1f1025b272237...>, "keyId"=>6761895265558331393}}} average_round_trip_time=0.6731575>>
+D, [2020-02-10T23:21:49.736764 #15312] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:21:49.737217 #15312] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:21:49.737440 #15312] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:21:50.148806 #15312] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:21:50.289198 #15312] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.140s
+D, [2020-02-10T23:21:50.309044 #15312] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:21:50.450068 #15312] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.139s
+D, [2020-02-10T23:21:50.450926 #15312] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:21:50.602128 #15312] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.151s
+D, [2020-02-10T23:21:50.603170 #15312] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google", "user"=>"5e403f2151edd6001784e87b"}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000064d52c8 @seconds=1581387700, @increment=1>, "signature"=>{"has...
+D, [2020-02-10T23:21:50.742177 #15312] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.138s
+D, [2020-02-10T23:21:51.864113 #15312] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:21:52.003704 #15312] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.139s
+D, [2020-02-10T23:21:52.025437 #15312] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:21:52.166405 #15312] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.140s
+D, [2020-02-10T23:21:52.167469 #15312] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:21:52.306687 #15312] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.138s
+D, [2020-02-10T23:21:52.308777 #15312] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x52355300 type=uuid data=0x214f1a51764a422c...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x0000000006ed0e58 @seconds=1581387710, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x58099340 type=gene...
+D, [2020-02-10T23:21:52.449595 #15312] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.140s
+D, [2020-02-10T23:22:14.907181 #18688] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:22:14.907735 #18688] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:22:14.908465 #18688] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:22:14.908759 #18688] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:22:14.909381 #18688] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:22:14.909846 #18688] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:22:14.910522 #18688] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:22:15.460158 #18688]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:22:15.460658 #18688] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:22:15.461033 #18688] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:22:15.461544 #18688] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:22:15.461814 #18688] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:22:15.462629 #18688] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:22:15.463222 #18688] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:22:15.911518 #18688] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:22:16.093443 #18688] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x45222920 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x46614600 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x00000000058ea2b0 @seconds=1581387726, @increment=2>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:22:06 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x00000000058e9fb8 @seconds=1581387726, @increment=2>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:22:06 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:22:16 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x00000000058e9928 @seconds=1581387726, @increment=2>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000058e97c0 @seconds=1581387726, @increment=2>, "signature"=>{"hash"=><BSON::Binary:0x46615300 type=generic data=0x519c63c846794f51...>, "keyId"=>6761895265558331393}}} average_round_trip_time=0.6295693>>
+D, [2020-02-10T23:22:16.093992 #18688] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:22:16.094767 #18688] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:22:16.095159 #18688] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:22:16.522590 #18688] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:22:16.661707 #18688] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.139s
+D, [2020-02-10T23:22:16.679641 #18688] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:22:16.820035 #18688] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.139s
+D, [2020-02-10T23:22:16.821074 #18688] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:22:16.959737 #18688] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.138s
+D, [2020-02-10T23:22:16.960221 #18688] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google", "user"=>"5e403f2151edd6001784e87b"}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000060e5460 @seconds=1581387726, @increment=2>, "signature"=>{"has...
+D, [2020-02-10T23:22:17.108602 #18688] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.148s
+D, [2020-02-10T23:22:19.229551 #18688] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:22:19.379986 #18688] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.150s
+D, [2020-02-10T23:22:19.399257 #18688] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:22:19.539484 #18688] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.139s
+D, [2020-02-10T23:22:19.540740 #18688] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:22:19.680949 #18688] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.139s
+D, [2020-02-10T23:22:19.682055 #18688] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x46814060 type=uuid data=0x9d96e398fd454587...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000060e5460 @seconds=1581387726, @increment=2>, "signature"=>{"hash"=><BSON::Binary:0x50800280 type=gene...
+D, [2020-02-10T23:22:19.824882 #18688] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.142s
+D, [2020-02-10T23:29:33.390626 #14144] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:29:33.391143 #14144] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:29:33.391793 #14144] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:33.392143 #14144] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:29:33.392635 #14144] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:33.393225 #14144] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:29:33.393792 #14144] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:34.394379 #14144] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:35.394971 #14144] DEBUG -- : MONGODB | Waiting for up to 28.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:36.395716 #14144] DEBUG -- : MONGODB | Waiting for up to 27.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:29:36.645685 #14144]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:29:36.646219 #14144] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:36.646532 #14144] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:29:36.646961 #14144] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:36.647307 #14144] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:29:36.652241 #14144] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:29:36.653037 #14144] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:29:37.396539 #14144] DEBUG -- : MONGODB | Waiting for up to 26.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:38.396888 #14144] DEBUG -- : MONGODB | Waiting for up to 25.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:38.440872 #14144] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x50194000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x50977760 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x0000000006130780 @seconds=1581388170, @increment=1>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:29:30 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x0000000006130550 @seconds=1581388170, @increment=1>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:29:30 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:29:38 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x0000000006130050 @seconds=1581388170, @increment=1>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x000000000613bf68 @seconds=1581388170, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x50978560 type=generic data=0xc51ae8c416f1a400...>, "keyId"=>6761895265558331393}}} average_round_trip_time=1.7879796>>
+D, [2020-02-10T23:29:38.441102 #14144] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:29:38.441447 #14144] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:29:38.441587 #14144] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:29:39.220524 #14144] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:29:39.816309 #14144] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.595s
+D, [2020-02-10T23:29:39.834572 #14144] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:29:39.967749 #14144] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.132s
+D, [2020-02-10T23:29:39.968755 #14144] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:29:40.110396 #14144] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.141s
+D, [2020-02-10T23:29:40.112024 #14144] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google", "user"=>BSON::ObjectId('5e403f2151edd6001784e87b')}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000052601b0 @seconds=1581388170, @increment=1>, "s...
+D, [2020-02-10T23:29:40.288136 #14144] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.175s
+D, [2020-02-10T23:29:43.432145 #14144] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:29:43.583469 #14144] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.151s
+D, [2020-02-10T23:29:43.595757 #14144] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:29:44.070138 #14144] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.474s
+D, [2020-02-10T23:29:44.071203 #14144] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:29:45.095378 #14144] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 1.024s
+D, [2020-02-10T23:29:45.096605 #14144] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x51040220 type=uuid data=0xaf3c3a67c0c546fa...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000063f2388 @seconds=1581388180, @increment=2>, "signature"=>{"hash"=><BSON::Binary:0x52400300 type=gene...
+D, [2020-02-10T23:29:46.004441 #14144] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.906s
+D, [2020-02-10T23:29:54.758844 #18532] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:29:54.759255 #18532] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:29:54.759731 #18532] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:54.759987 #18532] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:29:54.760359 #18532] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:54.760531 #18532] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:29:54.760814 #18532] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:55.761389 #18532] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:29:56.274683 #18532]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:29:56.275086 #18532] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:56.275292 #18532] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:29:56.275427 #18532] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:29:56.275515 #18532] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:29:56.276469 #18532] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:29:56.277466 #18532] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:29:56.762424 #18532] DEBUG -- : MONGODB | Waiting for up to 28.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:57.763520 #18532] DEBUG -- : MONGODB | Waiting for up to 27.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:29:58.371272 #18532] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x51053400 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x51809400 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x00000000062d2318 @seconds=1581388180, @increment=2>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:29:40 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x00000000062d20c0 @seconds=1581388180, @increment=2>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:29:40 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:29:58 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x00000000062d1c88 @seconds=1581388180, @increment=2>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000062d1b98 @seconds=1581388180, @increment=2>, "signature"=>{"hash"=><BSON::Binary:0x51809600 type=generic data=0xac41b67a5f72298f...>, "keyId"=>6761895265558331393}}} average_round_trip_time=2.0931479>>
+D, [2020-02-10T23:29:58.371659 #18532] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:29:58.372675 #18532] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:29:58.373028 #18532] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:29:59.255334 #18532] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:30:01.135953 #18532] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 1.877s
+D, [2020-02-10T23:30:01.145374 #18532] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:30:01.410866 #18532] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.265s
+D, [2020-02-10T23:30:01.411869 #18532] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:30:01.560514 #18532] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.148s
+D, [2020-02-10T23:30:01.561724 #18532] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google", "user"=>BSON::ObjectId('5e403f2151edd6001784e87b')}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x000000000646c5c0 @seconds=1581388200, @increment=1>, "s...
+D, [2020-02-10T23:30:01.736233 #18532] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.174s
+D, [2020-02-10T23:30:04.683080 #18532] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:30:05.459215 #18532] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.776s
+D, [2020-02-10T23:30:05.465206 #18532] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:30:06.289225 #18532] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.823s
+D, [2020-02-10T23:30:06.290480 #18532] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:30:07.918975 #18532] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 1.628s
+D, [2020-02-10T23:30:07.920351 #18532] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x51936680 type=uuid data=0x96bf07faab3a4ee9...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000065a9690 @seconds=1581388202, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x53299440 type=gene...
+D, [2020-02-10T23:30:08.186181 #18532] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.265s
+D, [2020-02-10T23:33:49.205533 #7828] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2020-02-10T23:33:49.206098 #7828] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2020-02-10T23:33:49.206832 #7828] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:33:49.207140 #7828] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2020-02-10T23:33:49.207632 #7828] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:33:49.208134 #7828] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 initializing.
+D, [2020-02-10T23:33:49.208853 #7828] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[ds035664.mlab.com:35664] servers=[#<Server address=ds035664.mlab.com:35664 UNKNOWN>]>
+W, [2020-02-10T23:33:49.773453 #7828]  WARN -- : MONGODB | Removing server ds035664.mlab.com:35664 because it is not in hosts reported by primary ds035664.mlab.com:35664 (self-identified as ds035664-a.mlab.com:35664). Reported hosts are: ds035664-a.mlab.com:35664
+D, [2020-02-10T23:33:49.773819 #7828] DEBUG -- : MONGODB | EVENT: #<ServerClosed address=ds035664.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:33:49.774078 #7828] DEBUG -- : MONGODB | Server ds035664.mlab.com:35664 connection closed.
+D, [2020-02-10T23:33:49.774380 #7828] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=ds035664-a.mlab.com:35664 topology=Unknown[ds035664.mlab.com:35664]>
+D, [2020-02-10T23:33:49.774590 #7828] DEBUG -- : MONGODB | Server ds035664-a.mlab.com:35664 initializing.
+D, [2020-02-10T23:33:49.775068 #7828] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[ds035664.mlab.com:35664] new=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664]>
+D, [2020-02-10T23:33:49.775485 #7828] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+D, [2020-02-10T23:33:50.211325 #7828] DEBUG -- : MONGODB | Waiting for up to 29.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] servers=[#<Server address=ds035664-a.mlab.com:35664 UNKNOWN>]>
+D, [2020-02-10T23:33:50.381620 #7828] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=ds035664-a.mlab.com:35664 topology=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009] prev=#<Mongo::Server:Description:0x51233960 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x51820540 config={"hosts"=>["ds035664-a.mlab.com:35664"], "setName"=>"rs-ds035664", "setVersion"=>3, "ismaster"=>true, "secondary"=>false, "primary"=>"ds035664-a.mlab.com:35664", "me"=>"ds035664-a.mlab.com:35664", "electionId"=>BSON::ObjectId('7fffffff0000000000000009'), "lastWrite"=>{"opTime"=>{"ts"=>#<BSON::Timestamp:0x00000000062c2080 @seconds=1581388420, @increment=1>, "t"=>9}, "lastWriteDate"=>2020-02-11 02:33:40 UTC, "majorityOpTime"=>{"ts"=>#<BSON::Timestamp:0x00000000062c1360 @seconds=1581388420, @increment=1>, "t"=>9}, "majorityWriteDate"=>2020-02-11 02:33:40 UTC}, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-11 02:33:50 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0, "operationTime"=>#<BSON::Timestamp:0x00000000062c8188 @seconds=1581388420, @increment=1>, "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000062d7cf0 @seconds=1581388420, @increment=1>, "signature"=>{"hash"=><BSON::Binary:0x51821520 type=generic data=0xc8b66b0c844c5814...>, "keyId"=>6761895265558331393}}} average_round_trip_time=0.6041612>>
+D, [2020-02-10T23:33:50.382112 #7828] DEBUG -- : MONGODB | Server description for ds035664-a.mlab.com:35664 changed from 'unknown' to 'primary'.
+D, [2020-02-10T23:33:50.382937 #7828] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=ReplicaSetNoPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664] new=ReplicaSetWithPrimary[ds035664-a.mlab.com:35664,name=rs-ds035664,v=3,e=7fffffff0000000000000009]>
+D, [2020-02-10T23:33:50.383302 #7828] DEBUG -- : MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+D, [2020-02-10T23:33:50.856842 #7828] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 #1 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:33:51.005819 #7828] DEBUG -- : MONGODB | [8] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.149s
+D, [2020-02-10T23:33:51.012099 #7828] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:33:51.162904 #7828] DEBUG -- : MONGODB | [9] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.150s
+D, [2020-02-10T23:33:51.163789 #7828] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 #1 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:33:51.314362 #7828] DEBUG -- : MONGODB | [10] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.150s
+D, [2020-02-10T23:33:51.315509 #7828] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 #1 | spotdb.delete | STARTED | {"delete"=>"spots", "ordered"=>true, "deletes"=>[{"q"=>{"company"=>"Google", "user"=>BSON::ObjectId('5e403f2151edd6001784e87b')}, "limit"=>0}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x0000000006411760 @seconds=1581388430, @increment=1>, "s...
+D, [2020-02-10T23:33:51.445776 #7828] DEBUG -- : MONGODB | [11] ds035664-a.mlab.com:35664 | spotdb.delete | SUCCEEDED | 0.130s
+D, [2020-02-10T23:33:53.863218 #7828] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 #2 | spotdb.saslStart | STARTED | {}
+D, [2020-02-10T23:33:54.021692 #7828] DEBUG -- : MONGODB | [12] ds035664-a.mlab.com:35664 | spotdb.saslStart | SUCCEEDED | 0.158s
+D, [2020-02-10T23:33:54.036399 #7828] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:33:54.177357 #7828] DEBUG -- : MONGODB | [13] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.140s
+D, [2020-02-10T23:33:54.179696 #7828] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 #2 | spotdb.saslContinue | STARTED | {}
+D, [2020-02-10T23:33:54.343255 #7828] DEBUG -- : MONGODB | [14] ds035664-a.mlab.com:35664 | spotdb.saslContinue | SUCCEEDED | 0.162s
+D, [2020-02-10T23:33:54.345519 #7828] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x51021300 type=uuid data=0xdabb60a846ea4421...>}], "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x00000000065ed980 @seconds=1581388431, @increment=2>, "signature"=>{"hash"=><BSON::Binary:0x53439200 type=gene...
+D, [2020-02-10T23:33:54.486781 #7828] DEBUG -- : MONGODB | [15] ds035664-a.mlab.com:35664 | admin.endSessions | SUCCEEDED | 0.141s

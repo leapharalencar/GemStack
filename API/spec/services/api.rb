@@ -11,4 +11,12 @@ class SpotApi
             headers: { "Content-Type": "application/json" }
         )
     end
+
+    def save_spot(payload, @user_id)
+        self.class.post(          
+            "/spots",
+            body: payload.to_json,
+            headers: { "Content-Type": "application/json" }
+        )
+    end
 end
