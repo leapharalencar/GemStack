@@ -50,4 +50,9 @@ describe "POST /spots" do
             expect(@result.parsed_response["error"]).to eql "Company is required"
         end
     end
+
+    # desafio técnico
+    # empty thumbmaisl
+    # empty techs
+
 end
