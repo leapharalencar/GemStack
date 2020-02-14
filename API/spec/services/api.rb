@@ -12,6 +12,13 @@ class SpotApi
         )
     end
 
+    def dash(user_id)
+        self.class.get(          
+            "/dashboard",
+            headers: { "user_id" => user_id }
+        )
+    end
+
     def save_spot(payload, user_id)
         self.class.post(          
             "/spots",
