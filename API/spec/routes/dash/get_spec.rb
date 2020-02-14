@@ -16,7 +16,6 @@ describe "GET /dashboard" do
             expect(@result.parsed_response).not_to be_empty
         end
 
-
     end
     
 end
