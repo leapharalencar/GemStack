@@ -2,4 +2,4 @@
 
 # Desafio
 # Implementar o delete
-# é parecido com o get mudar login
+# Dica é extremamente parecido com o Get Uniq Spot
