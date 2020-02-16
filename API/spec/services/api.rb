@@ -19,6 +19,13 @@ class SpotApi
         )
     end
 
+    def find_spot(user_id, spot_id)
+        self.class.get(          
+            "/spots/" + spot_id,
+            headers: { "user_id" => user_id }
+        )
+    end
+
     def save_spot(payload, user_id)
         self.class.post(          
             "/spots",
