@@ -46,6 +46,7 @@ describe "POST /spots" do
         it "should return code 1001" do   
             expect(@result.parsed_response["code"]).to eql 1001
         end
+        
         it "should return required company" do   
             expect(@result.parsed_response["error"]).to eql "Company is required"
         end
