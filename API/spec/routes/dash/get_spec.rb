@@ -14,7 +14,7 @@ describe "GET /dashboard" do
         MongoDb.new.save_spots(spots)
     end
 
-    describe "when get spot list" do 
+    describe "when get spot list", :smoke do 
         before(:all) do
             @result = SpotApi.new.dash(@user_id)
         end
